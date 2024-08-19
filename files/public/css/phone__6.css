@@ -1,0 +1,12 @@
+.collectionOfClothes{
+    display: none;
+}
+.flexCollectionOfClothes{
+    display: flex;
+}
+.item_name{
+    margin-bottom: 8px;
+}
+.quantityAndDeleteButtonInCart{
+    margin-top: 8px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Modal and Slider</title>
+    <style>
+        /* Your existing CSS styles */
+
+.modal-content {
+    text-align: center;
+    position: relative;
+}
+
+.slider {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="../pics/co-ordSet12.webp" alt="Sample Image 1" class="myImages">
+            <img src="../pics/co-ordSet12.webp" alt="Sample Image 2" class="myImages">
+            <img src="../pics/co-ordSet12.webp" alt="Sample Image 3" class="myImages">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <div class="slider">
+                <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+                <span class="next" onclick="plusSlides(1)">&#10095;</span>
+            </div>
+        </div>
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("modalImage");
+var captionText = document.getElementById("caption");
+var images = document.getElementsByClassName('myImages');
+var currentSlide = 1;
+
+// Display modal and set current slide
+function openModal(imageSrc, altText) {
+    modal.style.display = "block";
+    modalImg.src = imageSrc;
+    captionText.innerHTML = altText;
+    currentSlide = 1; // Reset current slide when modal opens
+}
+
+// Close modal
+function closeModal() {
+    modal.style.display = "none";
+}
+
+// Navigate through slides
+function plusSlides(n) {
+    showSlides(currentSlide += n);
+}
+
+// Show a specific slide
+function showSlides(n) {
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) { currentSlide = 1 }
+    if (n < 1) { currentSlide = slides.length }
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[currentSlide - 1].style.display = "block";
+}
+
+// Attach click event to each image
+for (var i = 0; i < images.length; i++) {
+    images[i].onclick = function() {
+        var imageSrc = this.src;
+        var altText = this.alt;
+        openModal(imageSrc, altText);
+    }
+}
+
+// Close modal when click on close button
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    closeModal();
+}
+
+// Close modal when click outside of modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+    </script>
+</body>
+</html>

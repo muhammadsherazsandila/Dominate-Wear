@@ -1,0 +1,53 @@
+.buttonDownShirts{
+    margin: 40px 0px;
+}
+#beigePantsSection{
+    flex-direction: column;
+}
+#leftSideOfBeigePants{
+    width: 100%;
+}
+#rightSideOfBeigePants{
+    width: 100%;
+    margin-top: 20px;
+}
+.footerContainerForMargin {
+    margin: 0px 20px;
+}
+.navbar{
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+.facilitesImage{
+    width: 40px;
+    height: 40px;
+}
+.para{
+    font-size: 11px;
+}
+.thirdHeading{
+    font-size: 13px;
+}
+.firstHeading{
+    font-size: 30px;
+}
+#CollectionimagesContainer{
+    margin: 30px;
+}
+.addToCartButtonForModel{
+    font-size: 11px;
+    padding: 5px;
+}
+.sizeIndicators {
+    width: 19px;
+    font-size: 14px;
+}
+.quantityAndAddToCartButtonForDisplayFlex{
+    flex-direction: column;
+}
+.footer{
+    padding: 40px;
+}
+.footer div{
+    margin: 30px 0px;
+}

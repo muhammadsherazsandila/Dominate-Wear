@@ -1,0 +1,9 @@
+.quantityAndDeleteButtonInCart {
+    flex-direction: column;
+}
+.quantityAndDeleteButtonInCart button{
+    margin: 2px 0px;
+}
+.item_name{
+    font-size: 14px;
+}

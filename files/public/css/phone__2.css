@@ -1,0 +1,16 @@
+.collectionImage{
+    height: 200px;
+    width: 150px;
+}
+.secondHeading{
+    font-size: 15px;
+}
+#CollectionimagesContainer{
+    height: 270px;
+}
+.modalImagesContainerHavingPadding{
+    height: 300px;
+}
+.addToCartButtonForModel{
+    width: 100%;
+}

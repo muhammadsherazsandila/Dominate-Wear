@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womens Tops</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" media="screen and (max-width:1190px)" href="../css/phone__0.css">
+    <link rel="stylesheet" media="screen and (max-width:1090px)" href="../css/phone__1.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="../css/phone__2.css">
+    <link rel="stylesheet" media="screen and (max-width:870px)" href="../css/phone__3.css">
+    <link rel="stylesheet" media="screen and (max-width:840px)" href="../css/phone__4.css">
+    <link rel="stylesheet" media="screen and (max-width:750px)" href="../css/phone__5.css">
+    <link rel="stylesheet" media="screen and (max-width:680px)" href="../css/phone__6.css">
+    <link rel="stylesheet" media="screen and (max-width:710px)" href="../css/phone__5-1.css">
+    <link rel="stylesheet" media="screen and (max-width:540px)" href="../css/phone__6-1.css">
+    <link rel="stylesheet" media="screen and (max-width:370px)" href="../css/phone__7.css">
+</head>
+<body id="body">
+  <div class="hamburgerItems ">
+    <ul class="hamburgerListItems">
+      <li><a class="mainListItems" href="/home">Home</a></li>
+      <li><a class="hambergurMenWomen" href="/buttonDownShirts">Men
+      </a></li>
+      <li> <a class="hambergurMenWomen" href="/womensTops">Women
+      </a></li>
+      <li class="mainListItems"><a class="mainListItems" href="/allProducts">All Products</a></li>
+      <li class="mainListItems"><a class="mainListItems registerButton">Contact us</a></li>
+    </ul>
+  </div>
+  <section class="registerSection ">
+    <form action="/register" class="registerForm" method="post">
+      <div class="modelClose" id="closeIconForRegister">
+        <p class="closeIcon">&times;</p>
+      </div>
+      <h2 class="contactHeading">Register</h2>
+      <input type="text" name="name" id="name" placeholder="Name" required>
+      <span class="mailIcon"><img src="../icons/mail.png" alt="icon"></span>
+      <input type="email" name="registerEmail" id="registerEmail" placeholder="Email" required>
+      <img class="eyeIcon"  src="../icons/eyeBlack.png" alt="icon" id="openEyeIcon">
+      <img class="eyeIcon"  src="../icons/hideEye.png" alt="icon" id="hideEyeIcon">
+      <input type="password" name="registerPassword" id="registerPassword" placeholder="Password" required>
+      <button class="contactButtons" type="submit">Register</button>
+    </form>
+  </section>
+  <nav class="navbar" id="navigation">
+    <div class="hamburgerContainer">
+      <p class="line" id="line1"></p>
+      <p class="line" id="line2"></p>
+      <p class="line" id="line3"></p>
+    </div>
+    <img src="../logo/logoPic.jpg" alt="LogoImages" class="logo" />
+    <ul class="listItems">
+      <li><a class="mainListItems" href="/home">Home</a></li>
+      <li id="men">
+        <a class="dropDownWithName mainListItems" href="#">Men
+        <div>
+            <div class="dropIcons">
+              <p  class="dropDownIcon navDropicons" id="dropDownMen">&lt;</p>
+              <p  class="dropUpIcon navDropicons" id="dropUpMen">&gt;</p>
+            </div>
+          </a>
+          <ul class="underListContainer" id="menList">
+            <div class="underListUnderContainer">
+              <li>
+                <a href="/buttonDownShirts" class="underList">Button Down Shirts</a>
+              </li>
+              <li><a href="/pants" class="underList">Pants</a></li>
+            </div>
+          </ul>
+        </div>
+      </li>
+      <li id="women">
+        <a class="dropDownWithName mainListItems" href="#">Women
+          <div class="dropIcons dropIconsInWomen">
+            <p  class="dropDownIcon navDropicons" id="dropDownWomen">&lt;</p>
+            <p  class="dropUpIcon navDropicons" id="dropUpWomen">&gt;</p>
+          </div>
+        </a>
+        <ul class="underListContainer" id="womenList">
+          <div class="underListUnderContainer">
+            <li><a href="/coOrdSets" class="underList">Co-ord Sets</a></li>
+            <li><a href="/womensTops" class="underList">Tops</a></li>
+          </div>
+        </ul>
+      </li>
+      <li class="mainListItems"><a class="mainListItems" href="/allProducts">All Products</a></li>
+    </ul>
+    <div class="navRightContainer">
+        <div class="shoppinCartButtonAndredIndicator">
+          <a href="#" id="shippingBarButton"><img alt="" class="search_shippinCart_icons" src="../icons/shippingPic.png"/></a>
+          <p class="numberOfCartItem"></p>
+        </div>
+    </div>
+  </nav>
+  <section class="modalImagesContainer ">
+    <div class="modelImagesContainerHabvingDisplayFlex">
+      <div class="modalImagesContainerHavingPadding">
+        <div class="imgAndSlidesContainer leftSideOfModel">
+          <div class="beigePantsImagesPreViewerConatiner">
+            <img src="" alt="images" class="modelImages" id="modelImage1" />
+            <img src="" alt="images" class="modelImages" id="modelImage2" />
+            <img src="" alt="images" class="modelImages" id="modelImage3" />
+            <img src="" alt="images" class="modelImages" id="modelImage4" />
+          </div>
+          <p class="lessAndGreaterSymbolsBoth" id="lessThanSymbolInModel">&lt;</p>
+          <p class="lessAndGreaterSymbolsBoth" id="greaterThanSymbolInModel">&gt;</p>
+        </div>
+        <div class="rightSideOfModel">
+          <h2 class="beigePantsHeading modelProductName"></h2>
+          <div class="priceContainer beigePantsPrices">
+            <p class="currentPrice modelCurrentPrice"></p>
+            <p class="oldPrice modelOldPrice"></p>
+          </div>
+          <p class="beigePantsDetails text detailOfProductInModel">
+            Introducing the epitome of opulence in streetwear - our Cuban Button Down Shirt. Elevate your...
+          </p>
+          <div class="sizeShower">
+            <div class="sizeViewerCotainer">
+              <h4 class="sizeViewerOfBeigePants sizeHeadingInModel">Size:</h4>
+              <p class="sizeOfShirtInModel">L</p>
+            </div>
+            <div class="sizeOfBeigePantsContainer">
+              <button class="sizeIndicatorsInModel notSoldOutSizeInModel">S</button>
+              <button class="sizeIndicatorsInModel defaultSizeIndicator">L</button>
+              <button class="sizeIndicatorsInModel">XL</button>
+            </div>
+          </div>
+          <div class="quantitySettingContainer">
+            <h4 class="sizeViewerOfBeigePants">Quantity</h4>
+            <div class="sizeOfBeigePantsContainer quantityAndAddToCartButtonForDisplayFlex">
+              <div class="quantityAndAddToCartButton">
+                <button class="sizeIndicators soldOutSizeNumber"id="decreaseSizeNumberInModel">-</button>
+                <button class="sizeIndicators defaultSizeIndicator"id="quantityNumberInModel">1</button>
+                <button class="sizeIndicators"id="increaseSizeNumberInModel">+</button>
+              </div>
+              <button class="shopAndCartButtons addToCartButton addToCartButtonForModel">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="modelClose" id="closeIconForModel">
+          <p class="closeIcon">&times;</p>
+        </div>
+    </div>
+  </section>
+  <section class="shippingBarSectionForBackgroundBlur ">
+    <div class="shippingBarSection">
+      <div class="loadingControl"></div>
+      <div class="modelClose" id="closeIconForShipping">
+        <p class="closeIcon">&times;</p>
+      </div>
+      <h2 class="secondaryHeading shoppingHeadingInCart letterSpacing">Shopping Cart</h2>
+      <ul class="shoppingCartProductContainer">
+      </ul>
+      <div class="shoppingCartFooter">
+        <div class="shippingNoteAndCouponIconsContainer">
+          <div class="noteAndIcon headingAndIconInFooterOfCart">
+            <img src="../icons/pencil.png" alt="images">
+            <h3 class="headingsOfCouponNoteAndShippin">Note</h3>
+          </div>
+          <div class="shippingAndIcon headingAndIconInFooterOfCart">
+            <img src="../icons/shipping.png" alt="images">
+            <h3 class="headingsOfCouponNoteAndShippin">Shipping</h3>
+          </div>
+          <div class="couponAndIcon headingAndIconInFooterOfCart">
+            <img src="../icons/coupon.png" alt="images">
+            <h3 class="headingsOfCouponNoteAndShippin">Coupon</h3>
+          </div>
+        </div>
+        <div class="totalHeadingAndPriceContainerInFooterOfCart">
+          <h4 class="totalHeadingInFooter letterSpacing">Subtotal</h4>
+          <h5 class="totalPriceInFooter">0</h5>
+        </div>
+        <div class="checkOutButtonAndViewCartLinkContainerInFooter">
+          <button class="checkOutButtonInFooter shopAndCartButtons">Check out</button>
+          <a href="#" class="viewCartLink">view cart</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="buttonDownShirts">
+    <h1 class ="heading animatedElement">Womens Tops</h1>
+      <div class="buttonDownShirtsImagesContainer buttonDownShirtsTab">
+        <div class="separateImageContainer  animatedElement" product_quntity="1" product_id='15' product_name='Luxe Noi' product_price='2990' product_img='../pics/tops12.jpg"' >
+          <div class="sameImagesContainer">
+            <img src="../pics/tops12.jpg" alt="Images" class="shirtsImage1" />
+            <img src="../pics/tops11.jpg" alt="Images" class="shirtsImage2" />
+            <img src="../pics/tops13.jpg" alt="Images" class="shirtsImage3" />
+            <img src="../pics/tops33.jpg" alt="Images" class="shirtsImage4" />
+            <button class="selectButton">Select Options</button>
+          </div>
+          <div class="nameAndPriceContainer">
+            <h3 class="productName">Luxe Noir</h3>
+            <div class="priceContainer">
+              <p class="currentPrice">Rs.2,999.00</p>
+              <p class="oldPrice">Rs.3,999.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="separateImageContainer  animatedElement" product_quntity="1" product_id='16' product_name='Puffer Tops' product_price='2990' product_img='../pics/tops22.jpg' >
+          <div class="sameImagesContainer">
+            <img src="../pics/tops22.jpg" alt="Images" class="shirtsImage1" />
+            <img src="../pics/tops21.jpg" alt="Images" class="shirtsImage2" />
+            <img src="../pics/tops22.jpg" alt="Images" class="shirtsImage3" />
+            <img src="../pics/tops33.jpg" alt="Images" class="shirtsImage4" />
+            <button class="selectButton">Select Options</button>
+          </div>
+          <div class="nameAndPriceContainer">
+            <h3 class="productName">Puffer Tops</h3>
+            <div class="priceContainer">
+              <p class="currentPrice">Rs.2,999.00</p>
+              <p class="oldPrice">Rs.3,999.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="separateImageContainer  animatedElement" product_quntity="1" product_id='17' product_name='The Money Shirt' product_price='2990' product_img='../pics/tops32.jpg' >
+          <div class="sameImagesContainer">
+            <img src="../pics/tops32.jpg" alt="Images" class="shirtsImage1" />
+            <img src="../pics/tops31.jpg" alt="Images" class="shirtsImage2" />
+            <img src="../pics/tops32.jpg" alt="Images" class="shirtsImage3" />
+            <img src="../pics/tops33.jpg" alt="Images" class="shirtsImage4" />
+            <button class="selectButton">Select Options</button>
+          </div>
+          <div class="nameAndPriceContainer">
+            <h3 class="productName">The Money Shirt</h3>
+            <div class="priceContainer">
+              <p class="currentPrice">Rs.2,475.00</p>
+              <p class="oldPrice">Rs.3,400.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="separateImageContainer animatedElement" product_quntity="1" product_id='18' product_name='Striped Button Down' product_price='2990' product_img='../pics/tops42.jpg' >
+          <div class="sameImagesContainer">
+            <img src="../pics/tops42.jpg" alt="Images" class="shirtsImage1" />
+            <img src="../pics/tops41.jpg" alt="Images" class="shirtsImage2" />
+            <img src="../pics/tops43.jpg" alt="Images" class="shirtsImage3" />
+            <img src="../pics/tops44.jpg" alt="Images" class="shirtsImage4" />
+            <button class="selectButton">Select Options</button>
+          </div>
+          <div class="nameAndPriceContainer">
+            <h3 class="productName">Striped Button Down</h3>
+            <div class="priceContainer">
+              <p class="currentPrice">Rs.2,475.00</p>
+              <p class="oldPrice">Rs.3400.00</p>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+  </section>
+  <footer class="footer ">
+    <div class="footerEmailElement footerElements animatedElement">
+      <h3 class="footerHeading">Let's get in touch</h3>
+      <form action="/login" method="post" id="loginForm">
+        <div class="emailInputIconAndArrowButtonContainer">
+          <img src="../icons/mail.png" alt="icons">
+          <input type="email" name="loginEmail" id="email" placeholder="Email" required>
+          <button class="arrowButtonForEmail" type="submit">&rarr;</button>
+        </div>
+        <img src="../icons/eyeBlack.png" class="loginIcons" id="openLoginEyeIcon"  alt="eyeIcon">
+        <img src="../icons/hideEye.png" class="loginIcons" id="closeLoginEyeIcon" alt="eyeIcon">
+        <input type="password" name="loginPassword" id="loginPassword" placeholder="Password" required>
+      </form>
+    </div>
+    <div class="footerNavigationElement footerElements animatedElement">
+      <h3 class="footerHeading">Navigation</h3>
+      <ul class="footerNavigationListElement">
+        <li><a class="text" href="/home">Home</a></li>
+        <li><a class="text" href="/buttonDownShirts">Men</a></li>
+        <li><a class="text" href="/womensTops">Women</a></li>
+        <li><a class="text" href="/products">All Products</a></li>
+        <li><a class="text registerButton" >Contact us</a></li>
+      </ul>
+    </div>
+    <div class="footerInformationElement footerElements animatedElement">
+      <h3 class="footerHeading">Informations</h3>
+      <ul class="footerNavigationListElement">
+        <li><a class="text" href="/sizechart">Size Chart</a></li>
+        <li><a class="text" href="/orders">Orders and Shipping</a></li>
+        <li><a class="text" href="/exchange">Exchange and Refund</a></li>
+        <li><a class="text" href="/terms">Terms and Services</a></li>
+        <li><a class="text" href="/privacy">Privacy and Policy</a></li>
+        <li><a class="text" href="/about">About Us</a></li>
+        <li><a class="text" href="/contact">Contact Us</a></li>
+        <li><a class="text" href="/refund">Refund Policy</a></li>
+      </ul>
+    </div>
+    <div class="footrHeadquater footerElements animatedElement">
+      <h3 class="footerHeading">Location</h3>
+      <div class="houseAndAddress">
+        <img src="../icons/house.png" alt="images">
+        <p class="text">Lahore, Pakistan</p>
+      </div>
+      <div class="houseAndAddress">
+        <img src="../icons/call.jpeg" alt="images">
+        <p class="text">+92326048787</p>
+      </div>
+      <div class="houseAndAddress">
+        <img src="../icons/message.png" alt="images">
+        <p class="text">@sandila clothes</p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="../js/sameWorking.js"></script>
+</html>

@@ -1,0 +1,12 @@
+.shoppingCartProduct {
+    flex-direction: column;
+}
+.shoppingCartProduct img{
+    width: 40%;
+}
+.quantityAndDeleteButtonInCart :nth-child(2){
+    width: 30%;
+}
+.shoppingCartProductContainer {
+    padding: 0px;
+}

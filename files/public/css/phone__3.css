@@ -1,0 +1,24 @@
+.listItems{
+    width: 45%;
+}
+.buttonDownShirts {
+    margin: 60px 30px;
+}
+.headingAndCounter{
+    margin: 30px;
+}.navbar{
+    justify-content: space-between;
+    padding: 12px 12px;
+}
+.logo{
+    height: 55px;
+    width: 55px;
+    margin-left: 0;
+}
+.navRightContainer{
+    margin: 0;
+    margin-right: 10px;
+}
+.separateImageContainer {
+    margin: 20px 20px;
+}
